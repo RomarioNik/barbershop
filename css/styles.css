@@ -24,6 +24,12 @@ a {
   text-decoration: none;
 }
 
+[class*='_container'] {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -115,6 +121,18 @@ a {
   display: flex;
 }
 
+.banner__list {
+}
+.banner__item {
+}
+.banner__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 2px;
+  color: var(--title-color);
+}
+
 .banner__wrap {
 }
 
@@ -132,11 +150,6 @@ a {
 .banner__text {
   color: var(--text-color);
 }
-
-/* .banner__aside {
-  width: 150px;
-  background-color: aqua;
-} */
 
 /* section about */
 
