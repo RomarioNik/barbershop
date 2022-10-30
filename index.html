@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +40,7 @@
         </ul>
       </nav>
 
-      <div class="header__contacts contacts">
+      <div class="header__contacts">
         <a class="contacts__link" href="tel:+380441111111">+38 044 111 11 11</a>
         <button class="contacts__button button" type="button">Online-booking</button>
       </div>
@@ -69,7 +73,8 @@
           <p class="banner__annotation annotation">A hair salon for men in Kyiv</p>
           <h1 class="banner__title title">BarberShop</h1>
           <p class="banner__text">
-            We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+            We are experts in trendy men’s haircuts. <br />
+            We work quickly, carefully and with style.
           </p>
         </div>
       </section>
@@ -149,7 +154,9 @@
               </li>
             </ul>
           </div>
-          <button class="prices__button button" type="button">Online-booking</button>
+          <div class="prices__button-wrap">
+            <button class="prices__button button" type="button">Online-booking</button>
+          </div>
         </div>
       </section>
 
@@ -184,33 +191,38 @@
             <p class="achievements__text-about">Gifts for regular customers</p>
           </li>
         </ul>
-        <p class="achievements__annotation annotation">Old traditional school</p>
-        <h2 class="achievements__title title">¿Why people come to us?</h2>
-        <p class="achievements__text">
-          Only good things are said about us. But it's better to see and feel 1 time than read 10
-          times.
-        </p>
+
+        <div class="achievements__wrap-text">
+          <p class="achievements__annotation annotation">Old traditional school</p>
+          <h2 class="achievements__title title">¿Why people come to us?</h2>
+          <p class="achievements__text">
+            Only good things are said about us. But it's better to see and feel 1 time than read 10
+            times.
+          </p>
+        </div>
       </section>
 
-      <section class="page__berbers berbers" id="barbers">
-        <div class="berbers__container">
-          <p class="berbers__annotation annotation">For true enjoyers of the atmosphere</p>
-          <h2 class="berbers__title title">Our barbers</h2>
+      <section class="page__barbers barbers" id="barbers">
+        <div class="barbers__container">
+          <p class="barbers__annotation annotation">For true enjoyers of the atmosphere</p>
+          <h2 class="barbers__title title">Our barbers</h2>
 
-          <ul class="berbers__list">
-            <li class="berbers__item">
+          <ul class="barbers__list">
+            <li class="barbers__item">
               <img
-                class="berbers__img"
+                class="barbers__img"
                 src="./images/john-smith.jpeg"
                 alt="Barber John Smith"
                 width="370"
               />
-              <h3 class="berbers__name">John Smith</h3>
-              <p class="berbers__description">Extreme Barber</p>
-              <ul class="berbers__list-social">
-                <li class="berbers__item-social">
+              <div class="barbers__wrap-text">
+                <h3 class="barbers__name">John Smith</h3>
+                <p class="barbers__description">Extreme Barber</p>
+              </div>
+              <ul class="barbers__list-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -238,9 +250,9 @@
                     </defs>
                   </svg>
                 </li>
-                <li class="berbers__item-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -260,9 +272,9 @@
                     </defs>
                   </svg>
                 </li>
-                <li class="berbers__item-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -275,9 +287,9 @@
                     />
                   </svg>
                 </li>
-                <li class="berbers__item-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -304,19 +316,21 @@
                 </li>
               </ul>
             </li>
-            <li class="berbers__item">
+            <li class="barbers__item">
               <img
-                class="berbers__img"
+                class="barbers__img"
                 src="./images/michele-doe.jpeg"
                 alt="Barber Michele Doe"
                 width="370"
               />
-              <h3 class="berbers__name">Michele Doe</h3>
-              <p class="berbers__description">Extreme Barber</p>
-              <ul class="berbers__list-social">
-                <li class="berbers__item-social">
+              <div class="barbers__wrap-text">
+                <h3 class="barbers__name">Michele Doe</h3>
+                <p class="barbers__description">Extreme Barber</p>
+              </div>
+              <ul class="barbers__list-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -344,9 +358,9 @@
                     </defs>
                   </svg>
                 </li>
-                <li class="berbers__item-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -366,9 +380,9 @@
                     </defs>
                   </svg>
                 </li>
-                <li class="berbers__item-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -381,9 +395,9 @@
                     />
                   </svg>
                 </li>
-                <li class="berbers__item-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -410,19 +424,21 @@
                 </li>
               </ul>
             </li>
-            <li class="berbers__item">
+            <li class="barbers__item">
               <img
-                class="berbers__img"
+                class="barbers__img"
                 src="./images/alan-black.jpeg"
                 alt="Barber Alan Black"
                 width="370"
               />
-              <h3 class="berbers__name">Alan Black</h3>
-              <p class="berbers__description">Extreme Barber</p>
-              <ul class="berbers__list-social">
-                <li class="berbers__item-social">
+              <div class="barbers__wrap-text">
+                <h3 class="barbers__name">Alan Black</h3>
+                <p class="barbers__description">Extreme Barber</p>
+              </div>
+              <ul class="barbers__list-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -450,9 +466,9 @@
                     </defs>
                   </svg>
                 </li>
-                <li class="berbers__item-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -472,9 +488,9 @@
                     </defs>
                   </svg>
                 </li>
-                <li class="berbers__item-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -487,9 +503,9 @@
                     />
                   </svg>
                 </li>
-                <li class="berbers__item-social">
+                <li class="barbers__item-social">
                   <svg
-                    class="berbers__svg-social"
+                    class="barbers__svg-social"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -564,14 +580,22 @@
           <h2 class="visually-hidden">Our contacts</h2>
           <form class="contacts__form" action="">
             <h3 class="contacts__title title">Online-booking</h3>
-            <input class="contacts__input" type="text" name="name" id="name" placeholder="Name*" />
-            <input
-              class="contacts__input"
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="Phone*"
-            />
+            <div class="contacts__wrap-input">
+              <input
+                class="contacts__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name*"
+              />
+              <input
+                class="contacts__input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone*"
+              />
+            </div>
             <textarea
               class="contacts__input-area"
               id="message"
