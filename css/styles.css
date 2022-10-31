@@ -57,6 +57,9 @@ p {
 }
 
 .button {
+  display: block;
+  padding: 12px 30px;
+
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -64,8 +67,6 @@ p {
   letter-spacing: 0.9px;
   color: var(--white-text-color);
   text-transform: uppercase;
-
-  padding: 12px 30px;
 
   border: 1px solid var(--active-text-color);
   border-radius: 25px;
@@ -83,21 +84,19 @@ p {
 /* header */
 
 .header {
-  padding: 52px 0;
-
   display: flex;
-  justify-content: space-between;
-
-  background-color: aqua;
+  align-items: center;
 }
 
 .header__logo {
+  margin-right: 40px;
 }
 
 .header__img {
 }
 
 .header__menu {
+  margin-right: auto;
 }
 
 .menu {
@@ -113,6 +112,10 @@ p {
 
 .menu__link,
 .contacts__link {
+  display: block;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -127,7 +130,12 @@ p {
 
 .header__contacts {
   display: flex;
-  gap: 40px;
+  align-items: center;
+}
+
+.contacts__link {
+  display: block;
+  margin-right: 40px;
 }
 
 .contacts__button {
@@ -491,9 +499,11 @@ p {
 }
 
 .contacts__input-area {
-  resize: none;
   width: 570px;
   height: 75px;
+  margin-bottom: 44px;
+
+  resize: none;
   border: none;
   background-color: #191c26;
   border-bottom: 1px solid var(--gray-text-color);
