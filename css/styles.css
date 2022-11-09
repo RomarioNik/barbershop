@@ -35,6 +35,12 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 [class*='_container'] {
   max-width: 1200px;
   padding: 0 15px;
@@ -79,6 +85,17 @@ p {
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--title-color);
+}
+
+.annotation::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+
+  background: rgba(157, 164, 189, 0.6);
 }
 
 /* header */
@@ -203,11 +220,12 @@ p {
 
 .about__list {
   display: flex;
+  gap: 30px;
   margin-right: 30px;
 }
 
-.about__item:not(:last-child) {
-  margin-right: 30px;
+.about__item {
+  width: calc((100% - 30px) / 2);
 }
 
 .about__img {
@@ -278,6 +296,7 @@ p {
 
 .prices__table {
 }
+
 .prices__row {
 }
 
@@ -285,11 +304,8 @@ p {
   color: var(--gray-text-color);
 }
 
-.prices__button-wrap {
-  text-align: center;
-}
-
 .prices__button {
+  margin: 0 auto;
 }
 
 /* section achievements */
@@ -378,6 +394,7 @@ p {
 }
 
 .barbers__item {
+  width: calc((100% - 60px) / 3);
   text-align: center;
 }
 
@@ -412,22 +429,28 @@ p {
 }
 
 .barbers__item-social {
+}
+
+.barbers__item-link {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  color: #303030;
 
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
 }
-.barbers__svg-social {
-  cursor: pointer;
+
+.barbers__item-link:hover,
+.barbers__item-link:focus {
+  color: var(--active-text-color);
 }
 
-.barbers__svg-social:hover,
-.barbers__svg-social:focus {
-  fill: var(--active-text-color);
+.barbers__svg-social {
+  fill: currentColor;
 }
 
 /* section portfolio */
@@ -449,7 +472,9 @@ p {
 }
 
 .portfolio__item {
+  width: calc((100% - 30px) / 2);
 }
+
 .portfolio__img {
 }
 
@@ -524,11 +549,20 @@ p {
 
 .contacts__list {
 }
+
+.contacts__item {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
 .contacts__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .contacts__link {
+  display: inline-block;
+  margin-right: 20px;
+
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -543,6 +577,12 @@ p {
   color: var(--active-text-color);
 }
 
+.contacts__icons {
+  display: inline-block;
+  stroke: currentColor;
+  /* stroke: var(--active-text-color); */
+}
+
 .contacts__link-adrress {
   font-weight: 700;
 }
@@ -555,10 +595,8 @@ p {
 }
 
 .contacts__hours {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
+  margin-bottom: 20px;
+
   color: var(--white-text-color);
 }
 
