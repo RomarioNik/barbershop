@@ -19,8 +19,10 @@
   </head>
   <body>
     <header class="header _container">
-      <a class="header__logo" href="./index.html">
-        <img class="header__img" src="./images/logo.svg" alt="logo" />
+      <a class="header__logo-link" href="./index.html">
+        <svg class="header__logo-icon" width="69" height="56">
+          <use href="./images/icons/icobarbershop.svg#icon-logo"></use>
+        </svg>
       </a>
 
       <nav class="header__menu menu">
@@ -219,28 +221,28 @@
               </div>
               <ul class="barbers__list-social">
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-linkedin"></use>
                     </svg>
@@ -261,28 +263,28 @@
               </div>
               <ul class="barbers__list-social">
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-linkedin"></use>
                     </svg>
@@ -303,28 +305,28 @@
               </div>
               <ul class="barbers__list-social">
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="barbers__item-social">
-                  <a class="barbers__item-link" href="#">
+                  <a class="barbers__item-link" href="#" target="_blank" rel="noopener noreferrer">
                     <svg class="barbers__svg-social" width="20" height="20">
                       <use href="./images/icons/icobarbershop.svg#icon-linkedin"></use>
                     </svg>
@@ -375,77 +377,85 @@
         </ul>
       </section>
 
-      <section class="page__contacts contacts" id="contacts">
-        <div class="contacts__container">
-          <h2 class="visually-hidden">Our contacts</h2>
-          <form class="contacts__form" action="">
-            <h3 class="contacts__title title">Online-booking</h3>
-            <div class="contacts__wrap-input">
-              <input
-                class="contacts__input"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name*"
-              />
-              <input
-                class="contacts__input"
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="Phone*"
-              />
+      <div class="page__wrap">
+        <div class="page__booking-contacts">
+          <section class="booking">
+            <div class="booking__wrap">
+              <h2 class="booking__title title">Online-booking</h2>
+              <form class="booking__form" action="">
+                <div class="booking__wrap-input">
+                  <input
+                    class="booking__input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name*"
+                  />
+                  <input
+                    class="booking__input"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone*"
+                  />
+                </div>
+                <textarea
+                  class="booking__input-area"
+                  id="message"
+                  name="story"
+                  placeholder="Message"
+                ></textarea>
+
+                <button class="booking__button button" type="submit">Send</button>
+              </form>
             </div>
-            <textarea
-              class="contacts__input-area"
-              id="message"
-              name="story"
-              placeholder="Message"
-            ></textarea>
+          </section>
 
-            <button class="contacts__button button" type="submit">Send</button>
-          </form>
-
-          <div class="contacts__wrap">
-            <h3 class="contacts__title title">Contacts</h3>
-            <address class="contacts__address">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <a
-                    class="contacts__link-adrress contacts__link"
-                    href="https://www.google.com/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.3978957,29.4509069,9z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4501!4d30.5234?hl=ru-KG"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <svg class="contacts__icons" width="16" height="18">
-                      <use href="./images/icons/icobarbershop.svg#icon-map-pin"></use>
-                    </svg>
-                    st. Vasilkovaya, 7A Kiev, 08132</a
-                  >
-                </li>
-                <li class="contacts__item">
-                  <a class="contacts__link-tel contacts__link" href="tel:+380441111111">
-                    <svg class="contacts__icons" width="16" height="16">
-                      <use href="./images/icons/icobarbershop.svg#icon-phone"></use>
-                    </svg>
-                    +38 044 111 11 11</a
-                  >
-                </li>
-                <li class="contacts__item">
-                  <a class="contacts__link-email contacts__link" href="mailto:barbershop@email.com">
-                    <svg class="contacts__icons" width="18" height="14">
-                      <use href="./images/icons/icobarbershop.svg#icon-mail"></use>
-                    </svg>
-                    barbershop@email.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <p class="contacts__hours annotation">Working hours</p>
-            <p class="contacts__text">Every day from 9:00 to 22:00</p>
-          </div>
+          <section class="contacts">
+            <div class="contacts__wrap">
+              <h2 class="contacts__title title">Contacts</h2>
+              <address class="contacts__address">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <a
+                      class="contacts__link-adrress contacts__link"
+                      href="https://www.google.com/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.3978957,29.4509069,9z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4501!4d30.5234?hl=ru-KG"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg class="contacts__icons" width="16" height="18">
+                        <use href="./images/icons/icobarbershop.svg#icon-map-pin"></use>
+                      </svg>
+                      st. Vasilkovaya, 7A Kiev, 08132</a
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link-tel contacts__link" href="tel:+380441111111">
+                      <svg class="contacts__icons" width="16" height="16">
+                        <use href="./images/icons/icobarbershop.svg#icon-phone"></use>
+                      </svg>
+                      +38 044 111 11 11</a
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <a
+                      class="contacts__link-email contacts__link"
+                      href="mailto:barbershop@email.com"
+                    >
+                      <svg class="contacts__icons" width="18" height="14">
+                        <use href="./images/icons/icobarbershop.svg#icon-mail"></use>
+                      </svg>
+                      barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <p class="contacts__hours annotation">Working hours</p>
+              <p class="contacts__text">Every day from 9:00 to 22:00</p>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="footer">
@@ -453,10 +463,22 @@
         <p class="footer__text">&copy; Copyright 2020</p>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="https://instagram.com">Instagram</a>
+            <a
+              class="footer__link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="https://yputube.com">Youtube</a>
+            <a
+              class="footer__link"
+              href="https://yputube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Youtube</a
+            >
           </li>
         </ul>
       </div>
