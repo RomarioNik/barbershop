@@ -168,13 +168,12 @@ address {
 }
 
 .contacts__button {
-  transition: color 250ms var(--base-transition), border-color 250ms var(--base-transition);
+  transition: background-color 250ms var(--base-transition);
 }
 
 .contacts__button:hover,
 .contacts__button:focus {
-  color: var(--active-text-color);
-  border-color: #ffffff;
+  background-color: var(--active-text-color);
 }
 
 /* main */
@@ -308,6 +307,14 @@ address {
 
 .about__button {
   color: var(--title-color);
+
+  transition: color 250ms var(--base-transition), background-color 250ms var(--base-transition);
+}
+
+.about__button:hover,
+.about__button:focus {
+  color: #ffffff;
+  background-color: var(--active-text-color);
 }
 
 /* section prices */
@@ -406,6 +413,13 @@ address {
 
 .prices__button {
   margin: 0 auto;
+
+  transition: background-color 250ms var(--base-transition);
+}
+
+.prices__button:hover,
+.prices__button:focus {
+  background-color: var(--active-text-color);
 }
 
 /* section achievements */
@@ -669,6 +683,13 @@ address {
 
 .booking__button {
   display: block;
+
+  transition: background-color 250ms var(--base-transition);
+}
+
+.booking__button:hover,
+.booking__button:focus {
+  background-color: var(--active-text-color);
 }
 
 .contacts {
