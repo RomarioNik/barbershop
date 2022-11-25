@@ -116,17 +116,8 @@ address {
   margin-right: 100px;
 }
 
-.header__logo-icon {
-}
-
-.header__img {
-}
-
 .header__menu {
   margin-right: auto;
-}
-
-.menu {
 }
 
 .menu__list {
@@ -178,13 +169,7 @@ address {
 
 /* main */
 
-.page {
-}
-
 /* section banner */
-
-.page__banner {
-}
 
 .banner {
   display: flex;
@@ -199,9 +184,6 @@ address {
 
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
-}
-
-.banner__item {
 }
 
 .banner__link {
@@ -222,12 +204,9 @@ address {
 .banner__link--annotation::before {
   content: '';
   display: inline-block;
-  /* vertical-align: middle;
-  writing-mode: vertical-lr; */
   width: 60px;
   height: 1px;
   margin-bottom: 20px;
-  /* margin-left: 20px; */
 
   background-color: currentColor;
 
@@ -283,17 +262,10 @@ address {
   width: calc((100% - 30px) / 2);
 }
 
-.about__img {
-}
-
 .about__wrap {
   max-width: 470px;
 }
 
-.about__annotation {
-}
-.about__title {
-}
 .about__text {
   margin-bottom: 20px;
 }
@@ -319,8 +291,6 @@ address {
 
 /* section prices */
 
-.page__prices {
-}
 .prices {
   max-width: 1600px;
   margin: 0 auto;
@@ -377,19 +347,8 @@ address {
   background-color: rgba(157, 164, 189, 0.12);
 }
 
-/* .prices__item:first-child {
-  order: 1;
-  background-color: #ffffff;
-} */
-
 .prices__item:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.prices__table {
-}
-
-.prices__row {
 }
 
 .prices__text {
@@ -400,16 +359,6 @@ address {
 .prices__text:first-child {
   order: -1;
 }
-
-/* .prices__text--line::before {
-  content: '';
-  display: inline-block;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(157, 164, 189, 0.12);
-  margin-left: 12px;
-  margin-right: 12px;
-} */
 
 .prices__button {
   margin: 0 auto;
@@ -424,8 +373,6 @@ address {
 
 /* section achievements */
 
-.page__achievements {
-}
 .achievements {
   padding: 120px 70px 120px 100px;
 
@@ -454,10 +401,6 @@ address {
 .achievements__item:nth-child(odd) {
   margin-right: 30px;
 }
-
-/* .achievements__item:nth-child(3) {
-  margin-top: 30px;
-} */
 
 .achievements__item:nth-child(even) {
   margin-top: 30px;
@@ -501,18 +444,9 @@ address {
 
 /* section barbers */
 
-.page__barbers {
-}
-
 .barbers {
   padding: 120px 0;
   background-color: #f7f7f7;
-}
-
-.barbers__annotation {
-}
-
-.barbers__title {
 }
 
 .barbers__list {
@@ -619,6 +553,7 @@ address {
 .booking {
   padding-top: 130px;
   padding-bottom: 120px;
+  padding-right: 30px;
   max-width: calc(50% + 15px);
   flex-grow: 1;
 
@@ -627,10 +562,6 @@ address {
 
 .booking__wrap {
   padding-left: 216px;
-}
-
-.booking__form {
-  /* background-color: #191c26; */
 }
 
 .booking__title {
@@ -644,9 +575,7 @@ address {
   margin-bottom: 44px;
 }
 
-.booking__input {
-  width: 270px;
-
+.input-style {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -654,31 +583,76 @@ address {
   color: #ffffff;
 
   border: none;
-  background-color: #191c26;
+  background-color: transparent;
   border-bottom: 1px solid var(--gray-text-color);
+
+  transition: border-bottom 250ms var(--base-transition);
 }
 
-.booking__input::placeholder {
+.label-style {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 1px;
   color: var(--gray-text-color);
   text-transform: uppercase;
+
+  transition: transform 250ms var(--base-transition);
+}
+
+.booking__input {
+  width: 100%;
+  height: 40px;
+}
+
+.booking__input:focus,
+.booking__input:not(:placeholder-shown) {
+  border-bottom: 1px solid #ffffff;
+  outline: transparent;
+}
+
+.booking__label {
+  position: relative;
+  flex-grow: 1;
+}
+
+.booking__label-text {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+}
+
+.booking__input:focus + .booking__label-text,
+.booking__input:not(:placeholder-shown) + .booking__label-text {
+  transform: translateY(-40px);
+}
+
+.booking__area-wrap {
+  position: relative;
+  margin-bottom: 44px;
 }
 
 .booking__input-area {
-  width: 570px;
+  width: 100%;
   height: 75px;
-  margin-bottom: 44px;
-
-  color: #ffffff;
-
   resize: none;
-  border: none;
-  background-color: #191c26;
-  border-bottom: 1px solid var(--gray-text-color);
 }
 
-.booking__input-area::placeholder {
-  color: var(--gray-text-color);
-  text-transform: uppercase;
+.booking__input-area:focus,
+.booking__input-area:not(:placeholder-shown) {
+  border-bottom: 1px solid #ffffff;
+  outline: transparent;
+}
+
+.booking__label-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.booking__input-area:focus + .booking__label-area,
+.booking__input-area:not(:placeholder-shown) + .booking__label-area {
+  transform: translateY(-20px);
 }
 
 .booking__button {
@@ -690,6 +664,11 @@ address {
 .booking__button:hover,
 .booking__button:focus {
   background-color: var(--active-text-color);
+}
+
+.input-style:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #191c26;
+  -webkit-text-fill-color: #ffffff;
 }
 
 .contacts {

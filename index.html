@@ -384,31 +384,45 @@
           <section class="booking">
             <div class="booking__wrap">
               <h2 class="booking__title title">Online-booking</h2>
-              <form class="booking__form" action="">
+              <form class="booking__form" id="booking-form">
                 <div class="booking__wrap-input">
-                  <input
-                    class="booking__input"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Name*"
-                  />
-                  <input
-                    class="booking__input"
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    placeholder="Phone*"
-                  />
+                  <label class="booking__label">
+                    <input
+                      class="booking__input input-style"
+                      type="text"
+                      name="name"
+                      minlength="3"
+                      required
+                      placeholder=" "
+                    />
+                    <span class="booking__label-text label-style">Name*</span>
+                  </label>
+                  <label class="booking__label">
+                    <input
+                      class="booking__input input-style"
+                      type="tel"
+                      name="phone"
+                      minlength="10"
+                      pattern="[0-9]+"
+                      required
+                      placeholder=" "
+                    />
+                    <span class="booking__label-text label-style">Phone*</span>
+                  </label>
                 </div>
-                <textarea
-                  class="booking__input-area"
-                  id="message"
-                  name="story"
-                  placeholder="Message"
-                ></textarea>
+                <div class="booking__area-wrap">
+                  <textarea
+                    class="booking__input-area input-style"
+                    name="story"
+                    id="textarea"
+                    placeholder=" "
+                  ></textarea>
+                  <label class="booking__label-area label-style" for="textarea">Message</label>
+                </div>
 
-                <button class="booking__button button" type="submit">Send</button>
+                <button class="booking__button button" type="submit" form="booking-form">
+                  Send
+                </button>
               </form>
             </div>
           </section>
